@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="emboltura-formulario">
+            <h1>Formulario de Contacto</h1>
+            <p class="subtitulo-form">Por favor, complete el siguiente formulario para contactarnos</p>
+
+            <form class="contact-form">
+            
+                <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Jorge Cruz" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="jorge@example.com" required>
+                    </div>
+                    
+                <div class="form-row-two">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+502 5341 0409">
+                    </div>    
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">--Seleccione el asunto--</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" minlength="10" placeholder="Escriba su mensaje aquí..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="preferencia">
+                    <input type="checkbox" id="preferencia" name="preferencia" required>
+                    Estoy de acuerdo con que me contacten
+                </label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
