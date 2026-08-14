@@ -1,0 +1,111 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between; /* logo izq, nav der */
+    align-items: center;
+    background-color: #192854;
+    color: white;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav {
+    color: white;
+}
+
+/* BASE mobile-first: links ocultos, hamburguesa visible */
+nav ul {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #192854;
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #4993cc;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked ~ ul {
+    display: flex;
+}
+
+/* Hamburguesa visible en móvil */
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* DESKTOP: hamburguesa oculto, links en fila */
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+        padding: 0 16px;
+    }
+}
+
+#inicio {
+    text-align: center;
+    padding: 2rem;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    
+    padding: 20px;
+    margin: 20px;
+}
+
+.tarjeta {
+    flex: 1 1 250px;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #192854;
+}

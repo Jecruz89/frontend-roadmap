@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: segoe ui, tahoma, geneva, verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrap-cal {
+   background: #f1f1f1;
+   padding: 40px;
+   border-radius: 13px;
+   box-shadow: 0 13px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    font-size: 40px;
+    color: #4993cc;
+    -webkit-text-stroke: 0.3px #192854;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.wrap-cal {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#btn-calcular {
+    padding: 10px 20px;
+    background-color: #192854;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-calcular:hover {
+    background-color: #4993cc;
+}
